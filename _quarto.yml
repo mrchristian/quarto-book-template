@@ -1,0 +1,46 @@
+project:
+  type: book
+  output-dir: docs
+
+# Quarto options for books
+# https://quarto.org/docs/reference/projects/books.html  
+
+book:
+  title: "Quarto Book Template"
+  author:
+    - name: "Author Name"
+      orcid: 0000-0000-0000-0000
+      affiliations:
+        - name: "TIB – Leibniz Information Centre for Science and Technology"
+          ror: https://ror.org/04aj4c181
+  date: "2026-06-21"
+  doi: "10.0000/zenodo.0000000"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  cover-image: images/cover.png
+  repo-url: https://github.com/mrchristian/quarto-book-template
+  repo-actions: [edit, source, issue]
+  downloads: [pdf, docx, epub]
+
+bibliography: references.bib
+
+format:
+  # options for HTML output
+  # https://quarto.org/docs/reference/formats/html.html
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+  docx: 
+    toc: true
+  epub: 
+    toc: true      
+
+# Quarto allows commenting using either Hypothesis or Utterances
+# https://quarto.org/docs/reference/projects/books.html#comments
+comments:
+  hypothesis: false
+
