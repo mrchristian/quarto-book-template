@@ -2,4 +2,51 @@
 
 This is a Quarto book.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+You can clone this template to create your own book project. The template includes a minimal configuration for citations and bibliographies, and is designed for DOCX to Quarto conversion.
+
+Full support instructions for Quarto Books here. You can also setup a new book project using these details <https://quarto.org/docs/books>.
+
+## Configuration
+
+Book template for DOCX to Quarto.
+
+Version: Minimal citation config Zotero copy/paste with Citation Style Language (CSL). 
+
+AI LLM only used in Ask mode to check on issues with no coding or configurations, and for autocomplete on documentation: Copilot - Claude Sonnet 4.6
+
+## Minimal citation handling (Zotero copy/paste with CSL)
+
+Citations added here use the Zotero copy/paste workflow, which allows for the insertion of citations, bibliographies, to set the CSL prior to use. Once items are pasted the citations are static and will not update if the Zotero library is updated. This is a limitation of this workflow. The citations are not recongnised by Pandoc.
+
+## Citations and bibliographies
+
+This template version does not use any additional citation processing by Quarto.
+
+Pandoc is the Quarto default for citations.
+
+Pandoc will attempt to process citations unless turned off.
+
+Optional programmes Quarto uses for rendering citation outputs: Pandoc, CSL and citeproc, LaTeX: using BibLaTeX or natbib.
+
+You can have multiple bibliographies, e.g., one per file (chapter), or/and one for a book.
+
+See: https://quarto.org/docs/authoring/citations.html
+
+## DOCX to QMD (Quarto Markdown)  
+
+The script below can be used to convert a DOCX file to Quarto Markdown (.qmd) using Pandoc. The command will extract any embedded images and save them in an images folder.
+
+```bash
+quarto pandoc docx/input.docx \
+  -f docx \
+  -t markdown \
+  --wrap=none \
+  --extract-media=./images \
+  -o output.qmd
+```
+
+- -f docx — explicit input format (optional, auto-detected from extension)
+- -t markdown — output as Markdown (.qmd is just Markdown + Quarto chunks)
+- --wrap=none — prevents Pandoc from hard-wrapping lines at 72 chars
+- --extract-media=./images — saves embedded images to an images folder instead of inlining as base64
+

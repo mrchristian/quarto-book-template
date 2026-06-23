@@ -4,39 +4,199 @@
     "href": "index.html",
     "title": "Quarto Book Template",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThis is a Quarto book.\nYou can clone this template to create your own book project. The template includes a minimal configuration for citations and bibliographies, and is designed for DOCX to Quarto conversion.\nFull support instructions for Quarto Books here. You can also setup a new book project using these details https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "objectID": "index.html#configuration",
+    "href": "index.html#configuration",
+    "title": "Quarto Book Template",
+    "section": "Configuration",
+    "text": "Configuration\nBook template for DOCX to Quarto.\nVersion: Minimal citation config Zotero copy/paste with Citation Style Language (CSL).\nAI LLM only used in Ask mode to check on issues with no coding or configurations, and for autocomplete on documentation: Copilot - Claude Sonnet 4.6",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Preface"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "objectID": "index.html#minimal-citation-handling-zotero-copypaste-with-csl",
+    "href": "index.html#minimal-citation-handling-zotero-copypaste-with-csl",
+    "title": "Quarto Book Template",
+    "section": "Minimal citation handling (Zotero copy/paste with CSL)",
+    "text": "Minimal citation handling (Zotero copy/paste with CSL)\nCitations added here use the Zotero copy/paste workflow, which allows for the insertion of citations, bibliographies, to set the CSL prior to use. Once items are pasted the citations are static and will not update if the Zotero library is updated. This is a limitation of this workflow. The citations are not recongnised by Pandoc.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Preface"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "objectID": "index.html#citations-and-bibliographies",
+    "href": "index.html#citations-and-bibliographies",
+    "title": "Quarto Book Template",
+    "section": "Citations and bibliographies",
+    "text": "Citations and bibliographies\nThis template version does not use any additional citation processing by Quarto.\nPandoc is the Quarto default for citations.\nPandoc will attempt to process citations unless turned off.\nOptional programmes Quarto uses for rendering citation outputs: Pandoc, CSL and citeproc, LaTeX: using BibLaTeX or natbib.\nYou can have multiple bibliographies, e.g., one per file (chapter), or/and one for a book.\nSee: https://quarto.org/docs/authoring/citations.html",
     "crumbs": [
-      "References"
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#docx-to-qmd-quarto-markdown",
+    "href": "index.html#docx-to-qmd-quarto-markdown",
+    "title": "Quarto Book Template",
+    "section": "DOCX to QMD (Quarto Markdown)",
+    "text": "DOCX to QMD (Quarto Markdown)\nThe script below can be used to convert a DOCX file to Quarto Markdown (.qmd) using Pandoc. The command will extract any embedded images and save them in an images folder.\nquarto pandoc docx/input.docx \\\n  -f docx \\\n  -t markdown \\\n  --wrap=none \\\n  --extract-media=./images \\\n  -o output.qmd\n\n-f docx — explicit input format (optional, auto-detected from extension)\n-t markdown — output as Markdown (.qmd is just Markdown + Quarto chunks)\n–wrap=none — prevents Pandoc from hard-wrapping lines at 72 chars\n–extract-media=./images — saves embedded images to an images folder instead of inlining as base64",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "ch1.html",
+    "href": "ch1.html",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Top level section (h2)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.\n1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, https://commons.wikimedia.org/w/index.php?curid=391754\nNunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.\nNam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch1.html#top-level-section-h2",
+    "href": "ch1.html#top-level-section-h2",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Section (h3)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.\nNulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.\n\nSection (h4)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.\n\nSection (h5)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.\n\nSection (h6)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch1.html#bibliography",
+    "href": "ch1.html#bibliography",
+    "title": "Chapter 1",
+    "section": "Bibliography",
+    "text": "Bibliography\nThe Author. 2026. “Lorem Ipsum.” In Wikipedia. June 10. https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&oldid=1358765294.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch2.html",
+    "href": "ch2.html",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Top level section (h2)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.\n1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, https://commons.wikimedia.org/w/index.php?curid=391754\nNunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.\nNam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch2.html#top-level-section-h2",
+    "href": "ch2.html#top-level-section-h2",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Section (h3)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.\nNulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.\n\nSection (h4)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.\n\nSection (h5)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.\n\nSection (h6)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch2.html#bibliography",
+    "href": "ch2.html#bibliography",
+    "title": "Chapter 1",
+    "section": "Bibliography",
+    "text": "Bibliography\nThe Author. 2026. “Lorem Ipsum.” In Wikipedia. June 10. https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&oldid=1358765294.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch3.html",
+    "href": "ch3.html",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Top level section (h2)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.\n1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, https://commons.wikimedia.org/w/index.php?curid=391754\nNunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.\nNam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch3.html#top-level-section-h2",
+    "href": "ch3.html#top-level-section-h2",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Section (h3)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.\nNulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.\n\nSection (h4)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.\n\nSection (h5)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.\n\nSection (h6)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch3.html#bibliography",
+    "href": "ch3.html#bibliography",
+    "title": "Chapter 1",
+    "section": "Bibliography",
+    "text": "Bibliography\nThe Author. 2026. “Lorem Ipsum.” In Wikipedia. June 10. https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&oldid=1358765294.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch4.html",
+    "href": "ch4.html",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Top level section (h2)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.\n1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, https://commons.wikimedia.org/w/index.php?curid=391754\nNunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.\nNam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch4.html#top-level-section-h2",
+    "href": "ch4.html#top-level-section-h2",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Section (h3)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.\nNulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.\n\nSection (h4)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.\n\nSection (h5)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.\n\nSection (h6)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch4.html#bibliography",
+    "href": "ch4.html#bibliography",
+    "title": "Chapter 1",
+    "section": "Bibliography",
+    "text": "Bibliography\nThe Author. 2026. “Lorem Ipsum.” In Wikipedia. June 10. https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&oldid=1358765294.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch5.html",
+    "href": "ch5.html",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Top level section (h2)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.\n1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, https://commons.wikimedia.org/w/index.php?curid=391754\nNunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.\nNam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch5.html#top-level-section-h2",
+    "href": "ch5.html#top-level-section-h2",
+    "title": "Chapter 1",
+    "section": "",
+    "text": "Section (h3)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.\nNulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.\n\nSection (h4)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.\n\nSection (h5)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.\n\nSection (h6)\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  },
+  {
+    "objectID": "ch5.html#bibliography",
+    "href": "ch5.html#bibliography",
+    "title": "Chapter 1",
+    "section": "Bibliography",
+    "text": "Bibliography\nThe Author. 2026. “Lorem Ipsum.” In Wikipedia. June 10. https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&oldid=1358765294.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 1</span>"
     ]
   }
 ]

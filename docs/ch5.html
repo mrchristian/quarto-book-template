@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Author Name">
-<meta name="dcterms.date" content="2026-06-23">
 
-<title>Quarto Book Template</title>
+<title>Chapter 1 – Quarto Book Template</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,7 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ch1.html" rel="next">
+<link href="./ch4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch5.html"><span class="chapter-title">Chapter 1</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -169,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -195,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 1</span></a>
+  <a href="./ch5.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Chapter 1</span></a>
   </div>
 </li>
     </ul>
@@ -208,58 +172,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#top-level-section-h2" id="toc-top-level-section-h2" class="nav-link active" data-scroll-target="#top-level-section-h2">Top level section (h2)</a>
   <ul class="collapse">
-  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
-  <li><a href="#minimal-citation-handling-zotero-copypaste-with-csl" id="toc-minimal-citation-handling-zotero-copypaste-with-csl" class="nav-link" data-scroll-target="#minimal-citation-handling-zotero-copypaste-with-csl">Minimal citation handling (Zotero copy/paste with CSL)</a></li>
-  <li><a href="#citations-and-bibliographies" id="toc-citations-and-bibliographies" class="nav-link" data-scroll-target="#citations-and-bibliographies">Citations and bibliographies</a></li>
-  <li><a href="#docx-to-qmd-quarto-markdown" id="toc-docx-to-qmd-quarto-markdown" class="nav-link" data-scroll-target="#docx-to-qmd-quarto-markdown">DOCX to QMD (Quarto Markdown)</a></li>
+  <li><a href="#section-h3" id="toc-section-h3" class="nav-link" data-scroll-target="#section-h3">Section (h3)</a></li>
   </ul></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mrchristian/quarto-book-template/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mrchristian/quarto-book-template/edit/main/ch5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/blob/main/ch5.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quarto Book Template</h1>
+<h1 class="title"><span class="chapter-title">Chapter 1</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Author Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            TIB – Leibniz Information Centre for Science and Technology
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 23, 2026</p>
-    </div>
-  </div>
+    
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.0000/zenodo.0000000">10.0000/zenodo.0000000</a>
-      </p>
-    </div>
-  </div>
   </div>
   
 
@@ -267,49 +202,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="images/cover.png" title="Quarto Book Template" class="quarto-cover-image img-fluid"></p>
-<p>This is a Quarto book.</p>
-<p>You can clone this template to create your own book project. The template includes a minimal configuration for citations and bibliographies, and is designed for DOCX to Quarto conversion.</p>
-<p>Full support instructions for Quarto Books here. You can also setup a new book project using these details <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<section id="configuration" class="level2">
-<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
-<p>Book template for DOCX to Quarto.</p>
-<p>Version: Minimal citation config Zotero copy/paste with Citation Style Language (CSL).</p>
-<p>AI LLM only used in Ask mode to check on issues with no coding or configurations, and for autocomplete on documentation: Copilot - Claude Sonnet 4.6</p>
+<p>The chapter text is made with placeholder or as it’s referred to in publishing Lorem Ipsum (The Author 2026) the industry-standard term for "dummy" or "filler" text used to preview a layout before the final content is ready. Generated from the website: <a href="https://lipsum.com/" class="uri">https://lipsum.com/</a></p>
+<section id="top-level-section-h2" class="level2">
+<h2 class="anchored" data-anchor-id="top-level-section-h2">Top level section (h2)</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula purus metus, imperdiet ornare elit dapibus mattis. Morbi luctus efficitur condimentum. Nam mollis dolor quam, eu auctor quam mattis ut. Sed dolor arcu, vestibulum non ex ut, eleifend venenatis risus. Phasellus magna turpis, dignissim sed tincidunt vel, semper quis quam. Nulla vehicula erat tellus, eget varius enim placerat vel. Sed in ornare lorem. Nunc imperdiet, ante in fermentum sagittis, turpis dui aliquet nisi, eget lobortis quam turpis sit amet nulla. Phasellus at leo sit amet dui accumsan malesuada a eu ligula. Donec tincidunt lectus nec metus sagittis, at feugiat risus congue.</p>
+<p><img src="./images/media/image1.jpeg" style="width:6.925in;height:9.09444in">1: By William Caslon - [1], uploaded to the English Wikipedia by Janke as Image:Caslonsample.jpg , 16:26, 23 March 2006, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=391754" class="uri">https://commons.wikimedia.org/w/index.php?curid=391754</a></p>
+<p>Nunc dictum sapien mi, quis pellentesque lorem porttitor eget. Curabitur vel pretium tortor. Aliquam ac ante tincidunt sapien pharetra facilisis. Sed sit amet mi tincidunt ipsum pellentesque aliquet id vel velit. Aenean eleifend sem sit amet mauris sagittis, vitae posuere ipsum placerat. Cras semper egestas urna. In maximus nulla ac magna rutrum, posuere consequat felis facilisis. Nullam lacinia nec dui at mollis. Quisque cursus risus sem, dignissim consectetur enim lacinia ac. Integer libero mi, varius eget tortor ac, maximus facilisis neque. Nullam commodo euismod ipsum ac imperdiet. Duis at imperdiet elit. Pellentesque eget enim sed eros consequat ultrices sed vitae lorem. Proin vitae nisi felis. Vestibulum ullamcorper, enim vel interdum congue, purus odio placerat lacus, id aliquam erat mi id arcu.</p>
+<p>Nam vel accumsan risus, nec cursus mi. Vestibulum sed tincidunt sem. Proin dignissim libero quis purus placerat ornare. Nam ac laoreet dolor, sit amet varius arcu. Quisque molestie pretium enim eu congue. Integer ac semper lectus, eget fringilla ex. Duis id mauris sed ipsum finibus congue.</p>
+<section id="section-h3" class="level3">
+<h3 class="anchored" data-anchor-id="section-h3">Section (h3)</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat suscipit tortor vitae ornare. Sed sed lorem dolor. Donec nec turpis accumsan, facilisis enim eu, porta purus. Praesent nec nisi orci. Quisque hendrerit neque nec felis eleifend, id dictum lacus rhoncus. Praesent id volutpat ex, sed tempor odio. Aliquam eros libero, auctor eget nisi aliquam, commodo venenatis velit. Quisque sodales ex quis interdum condimentum. Mauris aliquet arcu ut purus eleifend hendrerit. In convallis ut nisl eget malesuada.</p>
+<p>Nulla ipsum leo, egestas eget fringilla quis, elementum ut justo. In sapien metus, elementum vitae pulvinar id, viverra vel mauris. Phasellus vitae ultricies ex. Aenean blandit, sapien sed laoreet lacinia, est nunc volutpat mi, eget elementum turpis odio ac leo. Cras non sapien et enim malesuada lobortis auctor vel augue. Nullam leo nibh, finibus et nisi ac, porttitor mollis diam. Vestibulum blandit, nulla nec placerat aliquet, leo velit vehicula nisl, a rutrum leo dui aliquam sem. Curabitur sed tortor mauris. Suspendisse vestibulum augue eget dui vestibulum, gravida gravida turpis lacinia. Aenean a magna aliquet, elementum quam sed, bibendum felis. Etiam ac erat ornare, pharetra leo sagittis, aliquet nisi. Integer nec enim quis quam feugiat consectetur et nec diam. Donec enim felis, facilisis nec gravida sit amet, efficitur quis lectus. Ut eleifend leo lorem, eu congue mi accumsan in.</p>
+<section id="section-h4" class="level4">
+<h4 class="anchored" data-anchor-id="section-h4">Section (h4)</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit venenatis sapien, et luctus neque maximus in. Etiam lobortis pharetra dolor, vitae egestas elit facilisis eget. Aenean est odio, viverra eget porttitor at, posuere ut diam. Phasellus laoreet dolor quis nibh consequat mattis. Nulla semper pharetra eros non vehicula. Etiam et volutpat nisl. Morbi vestibulum imperdiet ullamcorper.</p>
+<section id="section-h5" class="level5">
+<h5 class="anchored" data-anchor-id="section-h5">Section (h5)</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien nisi, egestas sed elit ut, blandit mattis enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus eget posuere dignissim. Donec eu finibus sem, vitae iaculis nibh. In accumsan magna vitae nulla aliquet porta. In imperdiet purus neque, quis pharetra dui commodo id. Maecenas ligula lorem, ornare sed nunc vitae, pellentesque egestas ligula. Suspendisse tempor rhoncus dui ut rutrum. In fermentum, nisi sit amet consectetur scelerisque, mi justo malesuada neque, sit amet vestibulum mauris eros ac felis. Phasellus erat quam, malesuada at purus id, varius ultrices justo. Fusce ante mauris, sodales et feugiat quis, blandit vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus nec tellus consequat, elementum nibh id, ullamcorper enim. Quisque in tortor nec ipsum elementum tristique.</p>
+<section id="section-h6" class="level6">
+<h6 class="anchored" data-anchor-id="section-h6">Section (h6)</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus risus et eros scelerisque ultricies in sit amet purus. Integer tincidunt libero mauris, et dictum lorem pellentesque vel. Aenean interdum vel nisi vitae laoreet. Sed justo massa, luctus ut interdum vitae, porttitor id odio. Nulla faucibus commodo sapien quis aliquet. Vivamus ullamcorper est ut felis vehicula sollicitudin. Curabitur vel erat interdum neque volutpat laoreet et ut nulla.</p>
 </section>
-<section id="minimal-citation-handling-zotero-copypaste-with-csl" class="level2">
-<h2 class="anchored" data-anchor-id="minimal-citation-handling-zotero-copypaste-with-csl">Minimal citation handling (Zotero copy/paste with CSL)</h2>
-<p>Citations added here use the Zotero copy/paste workflow, which allows for the insertion of citations, bibliographies, to set the CSL prior to use. Once items are pasted the citations are static and will not update if the Zotero library is updated. This is a limitation of this workflow. The citations are not recongnised by Pandoc.</p>
 </section>
-<section id="citations-and-bibliographies" class="level2">
-<h2 class="anchored" data-anchor-id="citations-and-bibliographies">Citations and bibliographies</h2>
-<p>This template version does not use any additional citation processing by Quarto.</p>
-<p>Pandoc is the Quarto default for citations.</p>
-<p>Pandoc will attempt to process citations unless turned off.</p>
-<p>Optional programmes Quarto uses for rendering citation outputs: Pandoc, CSL and citeproc, LaTeX: using BibLaTeX or natbib.</p>
-<p>You can have multiple bibliographies, e.g., one per file (chapter), or/and one for a book.</p>
-<p>See: https://quarto.org/docs/authoring/citations.html</p>
 </section>
-<section id="docx-to-qmd-quarto-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="docx-to-qmd-quarto-markdown">DOCX to QMD (Quarto Markdown)</h2>
-<p>The script below can be used to convert a DOCX file to Quarto Markdown (.qmd) using Pandoc. The command will extract any embedded images and save them in an images folder.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> pandoc docx/input.docx <span class="dt">\</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-f</span> docx <span class="dt">\</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-t</span> markdown <span class="dt">\</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--wrap</span><span class="op">=</span>none <span class="dt">\</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--extract-media</span><span class="op">=</span>./images <span class="dt">\</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> output.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>-f docx — explicit input format (optional, auto-detected from extension)</li>
-<li>-t markdown — output as Markdown (.qmd is just Markdown + Quarto chunks)</li>
-<li>–wrap=none — prevents Pandoc from hard-wrapping lines at 72 chars</li>
-<li>–extract-media=./images — saves embedded images to an images folder instead of inlining as base64</li>
-</ul>
+</section>
+</section>
+<section id="bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="bibliography">Bibliography</h2>
+<p>The Author. 2026. “Lorem Ipsum.” In <em>Wikipedia</em>. June 10. <a href="https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&amp;oldid=1358765294" class="uri">https://en.wikipedia.org/w/index.php?title=Lorem_ipsum&amp;oldid=1358765294</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -735,11 +657,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./ch4.html" class="pagination-link" aria-label="Chapter 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Chapter 1</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch1.html" class="pagination-link" aria-label="Chapter 1">
-        <span class="nav-page-text"><span class="chapter-title">Chapter 1</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -747,4 +669,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mrchristian/quarto-book-template/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mrchristian/quarto-book-template/edit/main/ch5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/blob/main/ch5.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/mrchristian/quarto-book-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

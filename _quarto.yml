@@ -2,6 +2,8 @@ project:
   type: book
   output-dir: docs
 
+number-sections: false  
+
 # Quarto options for books
 # https://quarto.org/docs/reference/projects/books.html  
 
@@ -12,20 +14,19 @@ book:
       orcid: 0000-0000-0000-0000
       affiliations:
         - name: "TIB – Leibniz Information Centre for Science and Technology"
-          ror: https://ror.org/04aj4c181
-  date: "2026-06-21"
+  date: "today"
   doi: "10.0000/zenodo.0000000"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - ch1.qmd
+    - ch2.qmd
+    - ch3.qmd
+    - ch4.qmd
+    - ch5.qmd
   cover-image: images/cover.png
   repo-url: https://github.com/mrchristian/quarto-book-template
   repo-actions: [edit, source, issue]
   downloads: [pdf, docx, epub]
-
-bibliography: references.bib
 
 format:
   # options for HTML output
